@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* -- grid homepahe -- */
+
+body {
+    font-family: Roboto;
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-columns: minmax(200px, 1.2fr) 8.8fr;
+    grid-template-rows: 2fr 9fr;
+}
+
+aside {
+    background-color: #1992D4;
+    grid-area: 1 / 1 / 3 / 1;
+    display: grid;
+    /* grid-template-rows:  1fr 19fr;
+    padding: 5px;
+    gap: 5%; */
+}
+
+header {
+    background-color: #FFFFFF;
+    grid-area: 1 / 2 / 1 / 2;
+}
+
+main {
+    background-color: #E2E8F0;
+    grid-area: 2 / 2 / 2 / 2;
+}
+
+/* -- construction de la side bar -- */
+
+.sidebar {
+    display: grid;
+    padding-top: 5%;
+    grid-template-rows: minmax(50px, 10%) repeat(5, minmax(20px,5%)) minmax(50px, 10%) repeat(2,minmax(20px,5%)) minmax(100px, 55%);
+    color: whitesmoke;
+}
+
+aside .item1,.item2,.item3,.item4,.item5,.item6,.item7,.item8,.item9,.item10 {
+    display: flex;
+    gap: 5%;
+    text-align: center;
+    padding-left: 9%;
+}
+
+/* -- logo de la side bar -- */
+
+aside .item1 i {
+    font-size: 250%;
+}
+
+aside h1 {
+    font-size: 150%;
+    font-weight: 500;
+    padding-top: 3.25%;
+}
+
+/* -- éléments du menu --*/
+
+aside div i {
+    font-size: 130%;
+}
+
+aside div p {
+    font-size: 110%;
+    font-weight: 400;
+}
+
